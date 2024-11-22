@@ -47,7 +47,7 @@ Main-Class: com.maycon.Main
 
 ### Compila o codigo para a pasta `out`
 ```sh
-javac -d out src/main/java/com/maycon/Main.java
+javac -d out src/main/java/com/maycon/createUrlShortener/Main.java
 ```
 
 ### Gera o arquivo `.jar`
