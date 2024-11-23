@@ -29,10 +29,6 @@
 *.iws
 *.ipr
 
-# Arquivos do VS Code
-.vscode/
-!.vscode/lauch.json
-
 # Configurações do sistema operacional
 .DS_Store
 Thumbs.db
