@@ -26,6 +26,7 @@ Projeto/
 ├── .rest-client/
 │   └── api.http
 ├── .vscode/
+│   └── extensions.json
 │   └── lauch.json
 │   └── settings.json
 ├── assets/
