@@ -13,7 +13,6 @@
 /bin/
 /build/
 /target/
-/out/
 
 # Arquivos gerados pelo Maven
 .mvn/timing.properties

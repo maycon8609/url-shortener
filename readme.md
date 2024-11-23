@@ -20,43 +20,35 @@ ___
 3. Escolha um diretório para o projeto.
 4. O VS Code criará a estrutura básica do projeto com pastas como src e um arquivo Main.java.
 
-### Criar pasta out e arquivo de manifesto:
+### Extrutura de pastas:
 ```
 Projeto/
+├── .rest-client/
+│   └── api.http
+├── .vscode/
+│   └── lauch.json
+│   └── settings.json
+├── assets/
 ├── src/
 │   └── main
-|       └── java
-|           └── com
-|               └── maycon
-|                   └── createUrlShortener
-|                       └── Main.java
-├── out/
-├── META-INF/
-│   └── MANIFEST.MF
+│       └── java
+│           └── com
+│               └── maycon
+│                   └── createUrlShortener
+│                       └── Main.java
+├── target/
+├── .gitignore
+├── pom.xml
+├── readme.md
 ```
 
-### Execute o comando para instalar as dependências:
-```sh
-mvn clean install
-```
+### Para fazer o build usando o proprio vscode(o build sera feito na pasta `target`):
+#### `MAVEN -> Lifecycle -> package`
+![maven](assets/maven.png)
 
-### Manifest (Opcional, para um JAR Executável) `META-INF/MANIFEST.MF`
-```
-Manifest-Version: 1.0
-Main-Class: com.maycon.Main
-```
-
-### Compila o codigo para a pasta `out`
-```sh
-javac -d out src/main/java/com/maycon/createUrlShortener/Main.java
-```
-
-### Gera o arquivo `.jar`
-```sh
-jar cfm file-name.jar META-INF/MANIFEST.MF -C out .
-```
+___
 
 ### Executa o Arquivo `.jar`
 ```sh
-java -jar file-name.jar
+java -jar target/url-shortener-1.0-SNAPSHOT.jar
 ```
